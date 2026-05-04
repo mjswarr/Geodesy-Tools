@@ -1,0 +1,1901 @@
+Collecting package metadata (current_repodata.json): ...working... done
+Solving environment: ...working... failed with repodata from current_repodata.json, will retry with next repodata source.
+Collecting package metadata (repodata.json): ...working... done
+Solving environment: ...working... done
+
+
+==> WARNING: A newer version of conda exists. <==
+  current version: 23.1.0
+  latest version: 24.5.0
+
+Please update conda by running
+
+    $ conda update -n base -c defaults conda
+
+Or to minimize the number of packages updated during conda update use
+
+     conda install conda=24.5.0
+
+
+
+## Package Plan ##
+
+  environment location: /hellgate/home/ms180369/.conda/envs/my_env3
+
+  added / updated specs:
+    - compilers
+    - python=3.7
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    binutils-2.40              |       h4852527_1          30 KB  conda-forge
+    c-compiler-1.7.0           |       hd590300_1           6 KB  conda-forge
+    ca-certificates-2024.2.2   |       hbcca054_0         152 KB  conda-forge
+    compilers-1.7.0            |       ha770c72_1           7 KB  conda-forge
+    cxx-compiler-1.7.0         |       h00ab1b0_1           6 KB  conda-forge
+    fortran-compiler-1.7.0     |       heb67821_1           6 KB  conda-forge
+    gcc-12.3.0                 |       h915e2ae_7          25 KB  conda-forge
+    gcc_impl_linux-64-12.3.0   |       h58ffeeb_7        48.8 MB  conda-forge
+    gcc_linux-64-12.3.0        |       h6477408_3          30 KB  conda-forge
+    gfortran-12.3.0            |       h915e2ae_7          25 KB  conda-forge
+    gfortran_impl_linux-64-12.3.0|       h1645026_7        14.7 MB  conda-forge
+    gfortran_linux-64-12.3.0   |       h617cb40_3          29 KB  conda-forge
+    gxx-12.3.0                 |       h915e2ae_7          25 KB  conda-forge
+    gxx_impl_linux-64-12.3.0   |       h2a574ab_7        12.4 MB  conda-forge
+    gxx_linux-64-12.3.0        |       h4a1b8e8_3          29 KB  conda-forge
+    libffi-3.4.2               |       h7f98852_5          57 KB  conda-forge
+    libgcc-devel_linux-64-12.3.0|     h0223996_107         2.4 MB  conda-forge
+    libnsl-2.0.1               |       hd590300_0          33 KB  conda-forge
+    libsanitizer-12.3.0        |       hb8811af_7         3.8 MB  conda-forge
+    libsqlite-3.45.3           |       h2797004_0         840 KB  conda-forge
+    libstdcxx-devel_linux-64-12.3.0|     h0223996_107        11.3 MB  conda-forge
+    libzlib-1.2.13             |       h4ab18f5_6          60 KB  conda-forge
+    ncurses-6.5                |       h59595ed_0         867 KB  conda-forge
+    openssl-3.3.0              |       h4ab18f5_3         2.8 MB  conda-forge
+    pip-24.0                   |     pyhd8ed1ab_0         1.3 MB  conda-forge
+    python-3.7.12              |hf930737_100_cpython        57.3 MB  conda-forge
+    readline-8.2               |       h8228510_1         275 KB  conda-forge
+    setuptools-69.0.3          |     pyhd8ed1ab_0         460 KB  conda-forge
+    sqlite-3.45.3              |       h2c6b66d_0         829 KB  conda-forge
+    tk-8.6.13                  |noxft_h4845f30_101         3.2 MB  conda-forge
+    wheel-0.42.0               |     pyhd8ed1ab_0          56 KB  conda-forge
+    xz-5.2.6                   |       h166bdaf_0         409 KB  conda-forge
+    ------------------------------------------------------------
+                                           Total:       162.1 MB
+
+The following NEW packages will be INSTALLED:
+
+  _libgcc_mutex      conda-forge/linux-64::_libgcc_mutex-0.1-conda_forge 
+  _openmp_mutex      conda-forge/linux-64::_openmp_mutex-4.5-2_gnu 
+  binutils           conda-forge/linux-64::binutils-2.40-h4852527_1 
+  binutils_impl_lin~ conda-forge/linux-64::binutils_impl_linux-64-2.40-ha1999f0_1 
+  binutils_linux-64  conda-forge/linux-64::binutils_linux-64-2.40-hdade7a5_3 
+  c-compiler         conda-forge/linux-64::c-compiler-1.7.0-hd590300_1 
+  ca-certificates    conda-forge/linux-64::ca-certificates-2024.2.2-hbcca054_0 
+  compilers          conda-forge/linux-64::compilers-1.7.0-ha770c72_1 
+  cxx-compiler       conda-forge/linux-64::cxx-compiler-1.7.0-h00ab1b0_1 
+  fortran-compiler   conda-forge/linux-64::fortran-compiler-1.7.0-heb67821_1 
+  gcc                conda-forge/linux-64::gcc-12.3.0-h915e2ae_7 
+  gcc_impl_linux-64  conda-forge/linux-64::gcc_impl_linux-64-12.3.0-h58ffeeb_7 
+  gcc_linux-64       conda-forge/linux-64::gcc_linux-64-12.3.0-h6477408_3 
+  gfortran           conda-forge/linux-64::gfortran-12.3.0-h915e2ae_7 
+  gfortran_impl_lin~ conda-forge/linux-64::gfortran_impl_linux-64-12.3.0-h1645026_7 
+  gfortran_linux-64  conda-forge/linux-64::gfortran_linux-64-12.3.0-h617cb40_3 
+  gxx                conda-forge/linux-64::gxx-12.3.0-h915e2ae_7 
+  gxx_impl_linux-64  conda-forge/linux-64::gxx_impl_linux-64-12.3.0-h2a574ab_7 
+  gxx_linux-64       conda-forge/linux-64::gxx_linux-64-12.3.0-h4a1b8e8_3 
+  kernel-headers_li~ conda-forge/noarch::kernel-headers_linux-64-2.6.32-he073ed8_17 
+  ld_impl_linux-64   conda-forge/linux-64::ld_impl_linux-64-2.40-hf3520f5_1 
+  libffi             conda-forge/linux-64::libffi-3.4.2-h7f98852_5 
+  libgcc-devel_linu~ conda-forge/noarch::libgcc-devel_linux-64-12.3.0-h0223996_107 
+  libgcc-ng          conda-forge/linux-64::libgcc-ng-13.2.0-h77fa898_7 
+  libgfortran5       conda-forge/linux-64::libgfortran5-13.2.0-hca663fb_7 
+  libgomp            conda-forge/linux-64::libgomp-13.2.0-h77fa898_7 
+  libnsl             conda-forge/linux-64::libnsl-2.0.1-hd590300_0 
+  libsanitizer       conda-forge/linux-64::libsanitizer-12.3.0-hb8811af_7 
+  libsqlite          conda-forge/linux-64::libsqlite-3.45.3-h2797004_0 
+  libstdcxx-devel_l~ conda-forge/noarch::libstdcxx-devel_linux-64-12.3.0-h0223996_107 
+  libstdcxx-ng       conda-forge/linux-64::libstdcxx-ng-13.2.0-hc0a3c3a_7 
+  libzlib            conda-forge/linux-64::libzlib-1.2.13-h4ab18f5_6 
+  ncurses            conda-forge/linux-64::ncurses-6.5-h59595ed_0 
+  openssl            conda-forge/linux-64::openssl-3.3.0-h4ab18f5_3 
+  pip                conda-forge/noarch::pip-24.0-pyhd8ed1ab_0 
+  python             conda-forge/linux-64::python-3.7.12-hf930737_100_cpython 
+  readline           conda-forge/linux-64::readline-8.2-h8228510_1 
+  setuptools         conda-forge/noarch::setuptools-69.0.3-pyhd8ed1ab_0 
+  sqlite             conda-forge/linux-64::sqlite-3.45.3-h2c6b66d_0 
+  sysroot_linux-64   conda-forge/noarch::sysroot_linux-64-2.12-he073ed8_17 
+  tk                 conda-forge/linux-64::tk-8.6.13-noxft_h4845f30_101 
+  wheel              conda-forge/noarch::wheel-0.42.0-pyhd8ed1ab_0 
+  xz                 conda-forge/linux-64::xz-5.2.6-h166bdaf_0 
+
+
+
+Downloading and Extracting Packages
+libnsl-2.0.1         | 33 KB     |            |   0% 
+gxx_impl_linux-64-12 | 12.4 MB   |            |   0% [A
+
+cxx-compiler-1.7.0   | 6 KB      |            |   0% [A[A
+
+
+tk-8.6.13            | 3.2 MB    |            |   0% [A[A[A
+
+
+
+libgcc-devel_linux-6 | 2.4 MB    |            |   0% [A[A[A[A
+
+
+
+
+gxx_linux-64-12.3.0  | 29 KB     |            |   0% [A[A[A[A[A
+
+
+
+
+
+libffi-3.4.2         | 57 KB     |            |   0% [A[A[A[A[A[A
+
+
+
+
+
+
+openssl-3.3.0        | 2.8 MB    |            |   0% [A[A[A[A[A[A[A
+
+
+
+
+
+
+
+gfortran_impl_linux- | 14.7 MB   |            |   0% [A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+python-3.7.12        | 57.3 MB   |            |   0% [A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+libsanitizer-12.3.0  | 3.8 MB    |            |   0% [A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+setuptools-69.0.3    | 460 KB    |            |   0% [A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+libsqlite-3.45.3     | 840 KB    |            |   0% [A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+pip-24.0             | 1.3 MB    |            |   0% [A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+wheel-0.42.0         | 56 KB     |            |   0% [A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+readline-8.2         | 275 KB    |            |   0% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ca-certificates-2024 | 152 KB    |            |   0% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+gcc_linux-64-12.3.0  | 30 KB     |            |   0% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ncurses-6.5          | 867 KB    |            |   0% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ... (more hidden) ...[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+tk-8.6.13            | 3.2 MB    |            |   0% [A[A[A
+
+cxx-compiler-1.7.0   | 6 KB      | ########## | 100% [A[A
+gxx_impl_linux-64-12 | 12.4 MB   |            |   0% [Alibnsl-2.0.1         | 33 KB     | ####9      |  49% 
+
+
+
+libgcc-devel_linux-6 | 2.4 MB    |            |   1% [A[A[A[A
+
+cxx-compiler-1.7.0   | 6 KB      | ########## | 100% [A[A
+
+
+
+
+gxx_linux-64-12.3.0  | 29 KB     | #####5     |  56% [A[A[A[A[Alibnsl-2.0.1         | 33 KB     | ########## | 100% 
+
+
+
+
+
+libffi-3.4.2         | 57 KB     | ##8        |  28% [A[A[A[A[A[A
+
+
+tk-8.6.13            | 3.2 MB    | #9         |  19% [A[A[A
+gxx_impl_linux-64-12 | 12.4 MB   | 5          |   6% [A
+
+
+
+libgcc-devel_linux-6 | 2.4 MB    | ###8       |  39% [A[A[A[A
+
+
+
+
+
+
+openssl-3.3.0        | 2.8 MB    |            |   1% [A[A[A[A[A[A[A
+
+
+
+
+
+
+
+gfortran_impl_linux- | 14.7 MB   |            |   0% [A[A[A[A[A[A[A[A
+
+
+
+
+
+libffi-3.4.2         | 57 KB     | ########## | 100% [A[A[A[A[A[A
+
+
+
+
+gxx_linux-64-12.3.0  | 29 KB     | ########## | 100% [A[A[A[A[A
+
+
+
+
+gxx_linux-64-12.3.0  | 29 KB     | ########## | 100% [A[A[A[A[A
+gxx_impl_linux-64-12 | 12.4 MB   | ####5      |  46% [A
+
+
+
+
+
+
+openssl-3.3.0        | 2.8 MB    | ##2        |  23% [A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+python-3.7.12        | 57.3 MB   |            |   0% [A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+libsanitizer-12.3.0  | 3.8 MB    |            |   0% [A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+gfortran_impl_linux- | 14.7 MB   | 5          |   6% [A[A[A[A[A[A[A[A
+gxx_impl_linux-64-12 | 12.4 MB   | ########2  |  83% [A
+
+
+
+
+
+
+openssl-3.3.0        | 2.8 MB    | ###6       |  36% [A[A[A[A[A[A[A
+
+
+
+libgcc-devel_linux-6 | 2.4 MB    | ########## | 100% [A[A[A[A
+
+
+
+
+
+
+
+
+python-3.7.12        | 57.3 MB   | 3          |   3% [A[A[A[A[A[A[A[A[A
+
+
+
+libgcc-devel_linux-6 | 2.4 MB    | ########## | 100% [A[A[A[A
+
+
+
+
+
+
+
+
+
+libsanitizer-12.3.0  | 3.8 MB    | ####5      |  46% [A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+gfortran_impl_linux- | 14.7 MB   | #          |  10% [A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+python-3.7.12        | 57.3 MB   | #5         |  15% [A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+setuptools-69.0.3    | 460 KB    | 3          |   3% [A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+gfortran_impl_linux- | 14.7 MB   | ####       |  40% [A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+libsqlite-3.45.3     | 840 KB    | 1          |   2% [A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+pip-24.0             | 1.3 MB    | 1          |   1% [A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+wheel-0.42.0         | 56 KB     | ##8        |  28% [A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+gfortran_impl_linux- | 14.7 MB   | #####6     |  57% [A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+python-3.7.12        | 57.3 MB   | ##1        |  21% [A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+libsanitizer-12.3.0  | 3.8 MB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+libsanitizer-12.3.0  | 3.8 MB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+readline-8.2         | 275 KB    | 5          |   6% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+gfortran_impl_linux- | 14.7 MB   | #########6 |  97% [A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+python-3.7.12        | 57.3 MB   | ###1       |  31% [A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ca-certificates-2024 | 152 KB    | #          |  11% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+gcc_linux-64-12.3.0  | 30 KB     | #####2     |  53% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ncurses-6.5          | 867 KB    | 1          |   2% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ... (more hidden) ...[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+python-3.7.12        | 57.3 MB   | ####3      |  43% [A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+python-3.7.12        | 57.3 MB   | #####2     |  52% [A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+openssl-3.3.0        | 2.8 MB    | ########## | 100% [A[A[A[A[A[A[A
+
+
+
+
+
+
+openssl-3.3.0        | 2.8 MB    | ########## | 100% [A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+python-3.7.12        | 57.3 MB   | ######     |  61% [A[A[A[A[A[A[A[A[A
+gxx_impl_linux-64-12 | 12.4 MB   | ########## | 100% [A
+
+
+
+
+
+
+
+
+python-3.7.12        | 57.3 MB   | #######2   |  72% [A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+wheel-0.42.0         | 56 KB     | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+wheel-0.42.0         | 56 KB     | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+python-3.7.12        | 57.3 MB   | ########2  |  83% [A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+libsqlite-3.45.3     | 840 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+libsqlite-3.45.3     | 840 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+python-3.7.12        | 57.3 MB   | #########2 |  93% [A[A[A[A[A[A[A[A[A
+
+
+tk-8.6.13            | 3.2 MB    | ########## | 100% [A[A[A
+
+
+tk-8.6.13            | 3.2 MB    | ########## | 100% [A[A[A
+
+
+
+
+
+
+
+
+
+
+setuptools-69.0.3    | 460 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+setuptools-69.0.3    | 460 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+readline-8.2         | 275 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+readline-8.2         | 275 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ca-certificates-2024 | 152 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ca-certificates-2024 | 152 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+gcc_linux-64-12.3.0  | 30 KB     | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+gcc_linux-64-12.3.0  | 30 KB     | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+gfortran_impl_linux- | 14.7 MB   | ########## | 100% [A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ... (more hidden) ...[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+pip-24.0             | 1.3 MB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+pip-24.0             | 1.3 MB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ncurses-6.5          | 867 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ncurses-6.5          | 867 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+python-3.7.12        | 57.3 MB   | ########## | 100% [A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                      [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A                                                     
+                                                     [A
+
+                                                     [A[A
+
+
+                                                     [A[A[A
+
+
+
+                                                     [A[A[A[A
+
+
+
+
+                                                     [A[A[A[A[A
+
+
+
+
+
+                                                     [A[A[A[A[A[A
+
+
+
+
+
+
+                                                     [A[A[A[A[A[A[A
+
+
+
+
+
+
+
+                                                     [A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+                                                     [A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+                                                     [A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+                                                     [A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+                                                     [A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+                                                     [A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                     [A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                     [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                     [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                     [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                     [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+[A
+
+[A[A
+
+
+[A[A[A
+
+
+
+[A[A[A[A
+
+
+
+
+[A[A[A[A[A
+
+
+
+
+
+[A[A[A[A[A[A
+
+
+
+
+
+
+[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+[A[A[A[A[A[A[A[A[A[A[A[A
+Preparing transaction: ...working... done
+Verifying transaction: ...working... done
+Executing transaction: ...working... done
+#
+# To activate this environment, use
+#
+#     $ conda activate my_env3
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+
+Collecting package metadata (current_repodata.json): ...working... done
+Solving environment: ...working... failed with initial frozen solve. Retrying with flexible solve.
+Solving environment: ...working... failed with repodata from current_repodata.json, will retry with next repodata source.
+Collecting package metadata (repodata.json): ...working... done
+Solving environment: ...working... done
+
+
+==> WARNING: A newer version of conda exists. <==
+  current version: 23.1.0
+  latest version: 24.5.0
+
+Please update conda by running
+
+    $ conda update -n base -c defaults conda
+
+Or to minimize the number of packages updated during conda update use
+
+     conda install conda=24.5.0
+
+
+
+## Package Plan ##
+
+  environment location: /hellgate/home/ms180369/.conda/envs/my_env3
+
+  added / updated specs:
+    - numpy
+    - requests
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    python-3.7.15              |       h7a1cb2a_1        40.7 MB
+    ------------------------------------------------------------
+                                           Total:        40.7 MB
+
+The following NEW packages will be INSTALLED:
+
+  blas               pkgs/main/linux-64::blas-1.0-mkl 
+  brotlipy           pkgs/main/linux-64::brotlipy-0.7.0-py37h27cfd23_1003 
+  certifi            pkgs/main/linux-64::certifi-2022.12.7-py37h06a4308_0 
+  cffi               pkgs/main/linux-64::cffi-1.15.1-py37h5eee18b_3 
+  charset-normalizer pkgs/main/noarch::charset-normalizer-2.0.4-pyhd3eb1b0_0 
+  cryptography       pkgs/main/linux-64::cryptography-39.0.1-py37h9ce1e76_0 
+  idna               pkgs/main/linux-64::idna-3.4-py37h06a4308_0 
+  intel-openmp       pkgs/main/linux-64::intel-openmp-2021.4.0-h06a4308_3561 
+  mkl                pkgs/main/linux-64::mkl-2021.4.0-h06a4308_640 
+  mkl-service        pkgs/main/linux-64::mkl-service-2.4.0-py37h7f8727e_0 
+  mkl_fft            pkgs/main/linux-64::mkl_fft-1.3.1-py37hd3c417c_0 
+  mkl_random         pkgs/main/linux-64::mkl_random-1.2.2-py37h51133e4_0 
+  numpy              pkgs/main/linux-64::numpy-1.21.5-py37h6c91a56_3 
+  numpy-base         pkgs/main/linux-64::numpy-base-1.21.5-py37ha15fc14_3 
+  pycparser          pkgs/main/noarch::pycparser-2.21-pyhd3eb1b0_0 
+  pyopenssl          pkgs/main/linux-64::pyopenssl-23.0.0-py37h06a4308_0 
+  pysocks            pkgs/main/linux-64::pysocks-1.7.1-py37_1 
+  requests           pkgs/main/linux-64::requests-2.28.1-py37h06a4308_0 
+  six                pkgs/main/noarch::six-1.16.0-pyhd3eb1b0_1 
+  urllib3            pkgs/main/linux-64::urllib3-1.26.14-py37h06a4308_0 
+  zlib               pkgs/main/linux-64::zlib-1.2.13-h5eee18b_1 
+
+The following packages will be REMOVED:
+
+  libsqlite-3.45.3-h2797004_0
+  libzlib-1.2.13-h4ab18f5_6
+
+The following packages will be UPDATED:
+
+  ca-certificates    conda-forge::ca-certificates-2024.2.2~ --> pkgs/main::ca-certificates-2024.3.11-h06a4308_0 
+  python             conda-forge::python-3.7.12-hf930737_1~ --> pkgs/main::python-3.7.15-h7a1cb2a_1 
+  tk                 conda-forge::tk-8.6.13-noxft_h4845f30~ --> pkgs/main::tk-8.6.14-h39e8969_0 
+
+The following packages will be SUPERSEDED by a higher-priority channel:
+
+  openssl             conda-forge::openssl-3.3.0-h4ab18f5_3 --> pkgs/main::openssl-1.1.1w-h7f8727e_0 
+  sqlite              conda-forge::sqlite-3.45.3-h2c6b66d_0 --> pkgs/main::sqlite-3.45.3-h5eee18b_0 
+
+
+Proceed ([y]/n)? 
+
+Downloading and Extracting Packages
+python-3.7.15        | 40.7 MB   |            |   0% python-3.7.15        | 40.7 MB   |            |   0% python-3.7.15        | 40.7 MB   | 1          |   2% python-3.7.15        | 40.7 MB   | #1         |  11% python-3.7.15        | 40.7 MB   | ###6       |  36% python-3.7.15        | 40.7 MB   | ######     |  60% python-3.7.15        | 40.7 MB   | ########5  |  86% python-3.7.15        | 40.7 MB   | ########## | 100%                                                      
+Preparing transaction: ...working... done
+Verifying transaction: ...working... done
+Executing transaction: ...working... done
+rm -rf lib/.obj spp/.obj orbit/.obj tedit/.obj lsq/.obj redig/.obj arsig/.obj utils/.obj
+rm -rf spp/*.o spp/*.mod
+rm -rf lib/libcom.a
+make -j4 -C lib
+make[1]: Entering directory '/projects/ms180369/PRIDE-PPPAR/src/lib'
+gfortran -g -O3 -c rdrnxn.f90 -o .obj/rdrnxn.o
+gfortran -g -O3 -c lagrange_coeff.f90 -o .obj/lagrange_coeff.o
+gfortran -g -O3 -c cross.f90 -o .obj/cross.o
+gfortran -g -O3 -c yeardoy2monthday.f90 -o .obj/yeardoy2monthday.o
+gfortran -g -O3 -c unit_vector.f90 -o .obj/unit_vector.o
+gfortran -g -O3 -c pnormal.f90 -o .obj/pnormal.o
+gfortran -g -O3 -c dot.f90 -o .obj/dot.o
+gfortran -g -O3 -c lphase_windup.f90 -o .obj/lphase_windup.o
+gfortran -g -O3 -c read_glschn.f90 -o .obj/read_glschn.o
+gfortran -g -O3 -c rot_z.f90 -o .obj/rot_z.o
+gfortran -g -O3 -c polydf.f90 -o .obj/polydf.o
+gfortran -g -O3 -c cfa.f90 -o .obj/cfa.o
+gfortran -g -O3 -c phase_windup.f90 -o .obj/phase_windup.o
+gfortran -g -O3 -c read_meteo.f90 -o .obj/read_meteo.o
+gfortran -g -O3 -c slerp.f90 -o .obj/slerp.o
+gfortran -g -O3 -c read_kinpos.f90 -o .obj/read_kinpos.o
+gfortran -g -O3 -c calB0Theta.f90 -o .obj/calB0Theta.o
+gfortran -g -O3 -c read_position.f90 -o .obj/read_position.o
+gfortran -g -O3 -c read_clkjmp.f90 -o .obj/read_clkjmp.o
+gfortran -g -O3 -c next_rinex.f90 -o .obj/next_rinex.o
+gfortran -g -O3 -c lower_string.f90 -o .obj/lower_string.o
+gfortran -g -O3 -c pointer_int.f90 -o .obj/pointer_int.o
+gfortran -g -O3 -c asknewet.f90 -o .obj/asknewet.o
+gfortran -g -O3 -c timinc.f90 -o .obj/timinc.o
+gfortran -g -O3 -c lambda.f90 -o .obj/lambda.o
+gfortran -g -O3 -c upper_string.f90 -o .obj/upper_string.o
+gfortran -g -O3 -c read_bias.f90 -o .obj/read_bias.o
+gfortran -g -O3 -c findkey.f90 -o .obj/findkey.o
+gfortran -g -O3 -c matinv.f90 -o .obj/matinv.o
+gfortran -g -O3 -c modified_julday.f90 -o .obj/modified_julday.o
+gfortran -g -O3 -c rot_enu2xyz.f90 -o .obj/rot_enu2xyz.o
+gfortran -g -O3 -c sunmoon.f90 -o .obj/sunmoon.o
+gfortran -g -O3 -c vmf1_fit.f90 -o .obj/vmf1_fit.o
+gfortran -g -O3 -c rot_scfix2j2000.f90 -o .obj/rot_scfix2j2000.o
+gfortran -g -O3 -c matmpy.f90 -o .obj/matmpy.o
+gfortran -g -O3 -c mercator.f90 -o .obj/mercator.o
+gfortran -g -O3 -c read_satclk.f90 -o .obj/read_satclk.o
+gfortran -g -O3 -c rdrnxoi2.f90 -o .obj/rdrnxoi2.o
+gfortran -g -O3 -c saaszd.f90 -o .obj/saaszd.o
+read_satclk.f90:149:3:
+
+  140 |     goto 202
+      |            2
+......
+  149 | 202 continue
+      |   1
+Warning: Legacy Extension: Label at (1) is not in the same block as the GOTO statement at (2)
+gfortran -g -O3 -c check_amb_depend.f90 -o .obj/check_amb_depend.o
+gfortran -g -O3 -c vmf1_ht.f90 -o .obj/vmf1_ht.o
+gfortran -g -O3 -c bdeci.f90 -o .obj/bdeci.o
+gfortran -g -O3 -c mean_pole.f90 -o .obj/mean_pole.o
+gfortran -g -O3 -c troposphere_delay.f90 -o .obj/troposphere_delay.o
+gfortran -g -O3 -c ffun.f90 -o .obj/ffun.o
+gfortran -g -O3 -c tide_displace.f90 -o .obj/tide_displace.o
+gfortran -g -O3 -c prn_matbld.f90 -o .obj/prn_matbld.o
+gfortran -g -O3 -c troposphere_map.f90 -o .obj/troposphere_map.o
+gfortran -g -O3 -c read_igserp.f90 -o .obj/read_igserp.o
+gfortran -g -O3 -c wpress.f90 -o .obj/wpress.o
+gfortran -g -O3 -c global_meteo.f90 -o .obj/global_meteo.o
+gfortran -g -O3 -c lagrange_interp_orbit.f90 -o .obj/lagrange_interp_orbit.o
+gfortran -g -O3 -c rdrnxoi3.f90 -o .obj/rdrnxoi3.o
+gfortran -g -O3 -c run_tim.f90 -o .obj/run_tim.o
+gfortran -g -O3 -c rdsp3.f90 -o .obj/rdsp3.o
+gfortran -g -O3 -c left_justify_string.f90 -o .obj/left_justify_string.o
+gfortran -g -O3 -c mjd2doy.f90 -o .obj/mjd2doy.o
+gfortran -g -O3 -c interp_ionex.f90 -o .obj/interp_ionex.o
+gfortran -g -O3 -c pchi2.f90 -o .obj/pchi2.o
+gfortran -g -O3 -c pz2wgs84.f90 -o .obj/pz2wgs84.o
+gfortran -g -O3 -c rot_y.f90 -o .obj/rot_y.o
+gfortran -g -O3 -c nmfw2.f90 -o .obj/nmfw2.o
+gfortran -g -O3 -c yr2year.f90 -o .obj/yr2year.o
+gfortran -g -O3 -c find_ambd.f90 -o .obj/find_ambd.o
+gfortran -g -O3 -c bds_rng_cor.f90 -o .obj/bds_rng_cor.o
+gfortran -g -O3 -c cltasy.f90 -o .obj/cltasy.o
+gfortran -g -O3 -c vmf3_grid.f90 -o .obj/vmf3_grid.o
+gfortran -g -O3 -c timdif.f90 -o .obj/timdif.o
+gfortran -g -O3 -c read_obsrhd.f90 -o .obj/read_obsrhd.o
+gfortran -g -O3 -c read_att.f90 -o .obj/read_att.o
+gfortran -g -O3 -c reverse_file.f90 -o .obj/reverse_file.o
+gfortran -g -O3 -c file_name.f90 -o .obj/file_name.o
+gfortran -g -O3 -c read_lat.f90 -o .obj/read_lat.o
+gfortran -g -O3 -c gpt3_1.f90 -o .obj/gpt3_1.o
+gfortran -g -O3 -c global_map.f90 -o .obj/global_map.o
+gfortran -g -O3 -c calstech.f90 -o .obj/calstech.o
+gfortran -g -O3 -c split_string.f90 -o .obj/split_string.o
+gfortran -g -O3 -c mjd2date.f90 -o .obj/mjd2date.o
+gfortran -g -O3 -c rdatx.f90 -o .obj/rdatx.o
+gfortran -g -O3 -c day_of_year.f90 -o .obj/day_of_year.o
+gfortran -g -O3 -c rot_x.f90 -o .obj/rot_x.o
+gfortran -g -O3 -c nmfh2p1.f90 -o .obj/nmfh2p1.o
+gfortran -g -O3 -c vmf3_ht.f90 -o .obj/vmf3_ht.o
+gfortran -g -O3 -c pointer_string.f90 -o .obj/pointer_string.o
+gfortran -g -O3 -c sod2hms.f90 -o .obj/sod2hms.o
+gfortran -g -O3 -c gpsweek.f90 -o .obj/gpsweek.o
+gfortran -g -O3 -c xyzblh.f90 -o .obj/xyzblh.o
+gfortran -g -O3 -c rdionex.f90 -o .obj/rdionex.o
+gfortran -g -O3 -c quater2mat.f90 -o .obj/quater2mat.o
+gfortran -g -O3 -c eclips_galileo.f90 -o .obj/eclips_galileo.o
+gfortran -g -O3 -c partial_gnss.f90 -o .obj/partial_gnss.o
+gfortran -g -O3 -c get_valid_unit.f90 -o .obj/get_valid_unit.o
+gfortran -g -O3 -c vmf1_grid.f90 -o .obj/vmf1_grid.o
+gfortran -g -O3 -c ipp.f90 -o .obj/ipp.o
+gfortran -g -O3 -c precession_angle.f90 -o .obj/precession_angle.o
+gfortran -g -O3 -c leoqua2mat.f90 -o .obj/leoqua2mat.o
+gfortran -g -O3 -c glsbrd.f90 -o .obj/glsbrd.o
+gfortran -g -O3 -c find_flag.f90 -o .obj/find_flag.o
+gfortran -g -O3 -c sign_robust.f90 -o .obj/sign_robust.o
+gfortran -g -O3 -c normal.f90 -o .obj/normal.o
+gfortran -g -O3 -c spherical_harmonics.f90 -o .obj/spherical_harmonics.o
+gfortran -g -O3 -c get_wgt_mean.f90 -o .obj/get_wgt_mean.o
+gfortran -g -O3 -c frequency_glonass.f90 -o .obj/frequency_glonass.o
+gfortran -g -O3 -c ambslv.f90 -o .obj/ambslv.o
+gfortran -g -O3 -c brdxyz.f90 -o .obj/brdxyz.o
+gfortran -g -O3 -c ef2int.f90 -o .obj/ef2int.o
+gfortran -g -O3 -c mete_sea2site.f90 -o .obj/mete_sea2site.o
+gfortran -g -O3 -c taiutc.f90 -o .obj/taiutc.o
+gfortran -g -O3 -c chi2.f90 -o .obj/chi2.o
+gfortran -g -O3 -c rdrnxoh.f90 -o .obj/rdrnxoh.o
+gfortran -g -O3 -c chitst.f90 -o .obj/chitst.o
+gfortran -g -O3 -c oceanload_coef.f90 -o .obj/oceanload_coef.o
+gfortran -g -O3 -c get_antenna_corr.f90 -o .obj/get_antenna_corr.o
+gfortran -g -O3 -c rdorbh.f90 -o .obj/rdorbh.o
+gfortran -g -O3 -c fame03.for -o .obj/fame03.o
+gfortran -g -O3 -c bpn2xy.for -o .obj/bpn2xy.o
+gfortran -g -O3 -c falp03.for -o .obj/falp03.o
+gfortran -g -O3 -c rx.for -o .obj/rx.o
+gfortran -g -O3 -c nut00a.for -o .obj/nut00a.o
+gfortran -g -O3 -c obl06.for -o .obj/obl06.o
+gfortran -g -O3 -c sp00.for -o .obj/sp00.o
+gfortran -g -O3 -c fae03.for -o .obj/fae03.o
+gfortran -g -O3 -c era00.for -o .obj/era00.o
+gfortran -g -O3 -c faju03.for -o .obj/faju03.o
+gfortran -g -O3 -c ry.for -o .obj/ry.o
+gfortran -g -O3 -c eors.for -o .obj/eors.o
+gfortran -g -O3 -c rz.for -o .obj/rz.o
+gfortran -g -O3 -c c2teqx.for -o .obj/c2teqx.o
+gfortran -g -O3 -c faf03.for -o .obj/faf03.o
+gfortran -g -O3 -c nut06a.for -o .obj/nut06a.o
+gfortran -g -O3 -c fapa03.for -o .obj/fapa03.o
+gfortran -g -O3 -c fw2m.for -o .obj/fw2m.o
+gfortran -g -O3 -c rxr.for -o .obj/rxr.o
+gfortran -g -O3 -c gst06.for -o .obj/gst06.o
+gfortran -g -O3 -c faur03.for -o .obj/faur03.o
+gfortran -g -O3 -c tr.for -o .obj/tr.o
+gfortran -g -O3 -c fad03.for -o .obj/fad03.o
+gfortran -g -O3 -c faom03.for -o .obj/faom03.o
+gfortran -g -O3 -c fal03.for -o .obj/fal03.o
+gfortran -g -O3 -c s06.for -o .obj/s06.o
+gfortran -g -O3 -c fave03.for -o .obj/fave03.o
+gfortran -g -O3 -c fasa03.for -o .obj/fasa03.o
+gfortran -g -O3 -c pn06.for -o .obj/pn06.o
+gfortran -g -O3 -c ir.for -o .obj/ir.o
+gfortran -g -O3 -c pom00.for -o .obj/pom00.o
+gfortran -g -O3 -c cr.for -o .obj/cr.o
+gfortran -g -O3 -c fama03.for -o .obj/fama03.o
+gfortran -g -O3 -c pfw06.for -o .obj/pfw06.o
+gfortran -g -O3 -c anp.for -o .obj/anp.o
+gfortran -g -O3 -c cp.for -o .obj/cp.o
+gfortran -g -O3 -c PMSDNUT2.F -o .obj/PMSDNUT2.o
+gfortran -g -O3 -c RG_ZONT2.F -o .obj/RG_ZONT2.o
+gfortran -g -O3 -c FUNDARG.F -o .obj/FUNDARG.o
+gfortran -g -O3 -c IGRF12.F -o .obj/IGRF12.o
+gfortran -g -O3 -c SPLINE.F -o .obj/SPLINE.o
+gfortran -g -O3 -c DEHANTTIDEINEL.F -o .obj/DEHANTTIDEINEL.o
+gfortran -g -O3 -c SHELLS.F -o .obj/SHELLS.o
+SHELLS.F:73:72:
+
+   73 |  1    K(I) = I
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 1 at (1)
+IGRF12.F:773:72:
+
+  773 |    10 m     = m + 1
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 10 at (1)
+gfortran -g -O3 -c ADMINT.F -o .obj/ADMINT.o
+gfortran -g -O3 -c ORTHO_EOP.F -o .obj/ORTHO_EOP.o
+gfortran -g -O3 -c CNMTX.F -o .obj/CNMTX.o
+gfortran -g -O3 -c EVAL.F -o .obj/EVAL.o
+gfortran -g -O3 -c RECURS.F -o .obj/RECURS.o
+gfortran -g -O3 -c TDFRPH.F -o .obj/TDFRPH.o
+gfortran -g -O3 -c ST1IDIU.F -o .obj/ST1IDIU.o
+gfortran -g -O3 -c SPROD.F -o .obj/SPROD.o
+gfortran -g -O3 -c ZERO_VEC8.F -o .obj/ZERO_VEC8.o
+gfortran -g -O3 -c ST1ISEM.F -o .obj/ST1ISEM.o
+gfortran -g -O3 -c UTLIBR.F -o .obj/UTLIBR.o
+gfortran -g -O3 -c STEP2DIU.F -o .obj/STEP2DIU.o
+gfortran -g -O3 -c ST1L1.F -o .obj/ST1L1.o
+gfortran -g -O3 -c HARDISP.F -o .obj/HARDISP.o
+gfortran -g -O3 -c STEP2LON.F -o .obj/STEP2LON.o
+gfortran -g -O3 -c CAL2JD.F -o .obj/CAL2JD.o
+gfortran -g -O3 -c NORM8.F -o .obj/NORM8.o
+ar -rv libcom.a .obj/rdrnxn.o .obj/lagrange_coeff.o .obj/cross.o .obj/yeardoy2monthday.o .obj/unit_vector.o .obj/pnormal.o .obj/dot.o .obj/lphase_windup.o .obj/read_glschn.o .obj/rot_z.o .obj/polydf.o .obj/cfa.o .obj/phase_windup.o .obj/read_meteo.o .obj/slerp.o .obj/read_kinpos.o .obj/calB0Theta.o .obj/read_position.o .obj/read_clkjmp.o .obj/next_rinex.o .obj/lower_string.o .obj/pointer_int.o .obj/asknewet.o .obj/timinc.o .obj/lambda.o .obj/upper_string.o .obj/read_bias.o .obj/findkey.o .obj/matinv.o .obj/modified_julday.o .obj/rot_enu2xyz.o .obj/sunmoon.o .obj/vmf1_fit.o .obj/rot_scfix2j2000.o .obj/matmpy.o .obj/mercator.o .obj/read_satclk.o .obj/rdrnxoi2.o .obj/saaszd.o .obj/check_amb_depend.o .obj/vmf1_ht.o .obj/bdeci.o .obj/mean_pole.o .obj/troposphere_delay.o .obj/ffun.o .obj/tide_displace.o .obj/prn_matbld.o .obj/troposphere_map.o .obj/read_igserp.o .obj/wpress.o .obj/global_meteo.o .obj/lagrange_interp_orbit.o .obj/rdrnxoi3.o .obj/run_tim.o .obj/rdsp3.o .obj/left_justify_string.o .obj/mjd2doy.o .obj/interp_ionex.o .obj/pchi2.o .obj/pz2wgs84.o .obj/rot_y.o .obj/nmfw2.o .obj/yr2year.o .obj/find_ambd.o .obj/bds_rng_cor.o .obj/cltasy.o .obj/vmf3_grid.o .obj/timdif.o .obj/read_obsrhd.o .obj/read_att.o .obj/reverse_file.o .obj/file_name.o .obj/read_lat.o .obj/gpt3_1.o .obj/global_map.o .obj/calstech.o .obj/split_string.o .obj/mjd2date.o .obj/rdatx.o .obj/day_of_year.o .obj/rot_x.o .obj/nmfh2p1.o .obj/vmf3_ht.o .obj/pointer_string.o .obj/sod2hms.o .obj/gpsweek.o .obj/xyzblh.o .obj/rdionex.o .obj/quater2mat.o .obj/eclips_galileo.o .obj/partial_gnss.o .obj/get_valid_unit.o .obj/vmf1_grid.o .obj/ipp.o .obj/precession_angle.o .obj/leoqua2mat.o .obj/glsbrd.o .obj/find_flag.o .obj/sign_robust.o .obj/normal.o .obj/spherical_harmonics.o .obj/get_wgt_mean.o .obj/frequency_glonass.o .obj/ambslv.o .obj/brdxyz.o .obj/ef2int.o .obj/mete_sea2site.o .obj/taiutc.o .obj/chi2.o .obj/rdrnxoh.o .obj/chitst.o .obj/oceanload_coef.o .obj/get_antenna_corr.o .obj/rdorbh.o .obj/fame03.o .obj/bpn2xy.o .obj/falp03.o .obj/rx.o .obj/nut00a.o .obj/obl06.o .obj/sp00.o .obj/fae03.o .obj/era00.o .obj/faju03.o .obj/ry.o .obj/eors.o .obj/rz.o .obj/c2teqx.o .obj/faf03.o .obj/nut06a.o .obj/fapa03.o .obj/fw2m.o .obj/rxr.o .obj/gst06.o .obj/faur03.o .obj/tr.o .obj/fad03.o .obj/faom03.o .obj/fal03.o .obj/s06.o .obj/fave03.o .obj/fasa03.o .obj/pn06.o .obj/ir.o .obj/pom00.o .obj/cr.o .obj/fama03.o .obj/pfw06.o .obj/anp.o .obj/cp.o .obj/PMSDNUT2.o .obj/RG_ZONT2.o .obj/FUNDARG.o .obj/IGRF12.o .obj/SPLINE.o .obj/DEHANTTIDEINEL.o .obj/SHELLS.o .obj/ADMINT.o .obj/ORTHO_EOP.o .obj/CNMTX.o .obj/EVAL.o .obj/RECURS.o .obj/TDFRPH.o .obj/ST1IDIU.o .obj/SPROD.o .obj/ZERO_VEC8.o .obj/ST1ISEM.o .obj/UTLIBR.o .obj/STEP2DIU.o .obj/ST1L1.o .obj/HARDISP.o .obj/STEP2LON.o .obj/CAL2JD.o .obj/NORM8.o
+ar: creating libcom.a
+a - .obj/rdrnxn.o
+a - .obj/lagrange_coeff.o
+a - .obj/cross.o
+a - .obj/yeardoy2monthday.o
+a - .obj/unit_vector.o
+a - .obj/pnormal.o
+a - .obj/dot.o
+a - .obj/lphase_windup.o
+a - .obj/read_glschn.o
+a - .obj/rot_z.o
+a - .obj/polydf.o
+a - .obj/cfa.o
+a - .obj/phase_windup.o
+a - .obj/read_meteo.o
+a - .obj/slerp.o
+a - .obj/read_kinpos.o
+a - .obj/calB0Theta.o
+a - .obj/read_position.o
+a - .obj/read_clkjmp.o
+a - .obj/next_rinex.o
+a - .obj/lower_string.o
+a - .obj/pointer_int.o
+a - .obj/asknewet.o
+a - .obj/timinc.o
+a - .obj/lambda.o
+a - .obj/upper_string.o
+a - .obj/read_bias.o
+a - .obj/findkey.o
+a - .obj/matinv.o
+a - .obj/modified_julday.o
+a - .obj/rot_enu2xyz.o
+a - .obj/sunmoon.o
+a - .obj/vmf1_fit.o
+a - .obj/rot_scfix2j2000.o
+a - .obj/matmpy.o
+a - .obj/mercator.o
+a - .obj/read_satclk.o
+a - .obj/rdrnxoi2.o
+a - .obj/saaszd.o
+a - .obj/check_amb_depend.o
+a - .obj/vmf1_ht.o
+a - .obj/bdeci.o
+a - .obj/mean_pole.o
+a - .obj/troposphere_delay.o
+a - .obj/ffun.o
+a - .obj/tide_displace.o
+a - .obj/prn_matbld.o
+a - .obj/troposphere_map.o
+a - .obj/read_igserp.o
+a - .obj/wpress.o
+a - .obj/global_meteo.o
+a - .obj/lagrange_interp_orbit.o
+a - .obj/rdrnxoi3.o
+a - .obj/run_tim.o
+a - .obj/rdsp3.o
+a - .obj/left_justify_string.o
+a - .obj/mjd2doy.o
+a - .obj/interp_ionex.o
+a - .obj/pchi2.o
+a - .obj/pz2wgs84.o
+a - .obj/rot_y.o
+a - .obj/nmfw2.o
+a - .obj/yr2year.o
+a - .obj/find_ambd.o
+a - .obj/bds_rng_cor.o
+a - .obj/cltasy.o
+a - .obj/vmf3_grid.o
+a - .obj/timdif.o
+a - .obj/read_obsrhd.o
+a - .obj/read_att.o
+a - .obj/reverse_file.o
+a - .obj/file_name.o
+a - .obj/read_lat.o
+a - .obj/gpt3_1.o
+a - .obj/global_map.o
+a - .obj/calstech.o
+a - .obj/split_string.o
+a - .obj/mjd2date.o
+a - .obj/rdatx.o
+a - .obj/day_of_year.o
+a - .obj/rot_x.o
+a - .obj/nmfh2p1.o
+a - .obj/vmf3_ht.o
+a - .obj/pointer_string.o
+a - .obj/sod2hms.o
+a - .obj/gpsweek.o
+a - .obj/xyzblh.o
+a - .obj/rdionex.o
+a - .obj/quater2mat.o
+a - .obj/eclips_galileo.o
+a - .obj/partial_gnss.o
+a - .obj/get_valid_unit.o
+a - .obj/vmf1_grid.o
+a - .obj/ipp.o
+a - .obj/precession_angle.o
+a - .obj/leoqua2mat.o
+a - .obj/glsbrd.o
+a - .obj/find_flag.o
+a - .obj/sign_robust.o
+a - .obj/normal.o
+a - .obj/spherical_harmonics.o
+a - .obj/get_wgt_mean.o
+a - .obj/frequency_glonass.o
+a - .obj/ambslv.o
+a - .obj/brdxyz.o
+a - .obj/ef2int.o
+a - .obj/mete_sea2site.o
+a - .obj/taiutc.o
+a - .obj/chi2.o
+a - .obj/rdrnxoh.o
+a - .obj/chitst.o
+a - .obj/oceanload_coef.o
+a - .obj/get_antenna_corr.o
+a - .obj/rdorbh.o
+a - .obj/fame03.o
+a - .obj/bpn2xy.o
+a - .obj/falp03.o
+a - .obj/rx.o
+a - .obj/nut00a.o
+a - .obj/obl06.o
+a - .obj/sp00.o
+a - .obj/fae03.o
+a - .obj/era00.o
+a - .obj/faju03.o
+a - .obj/ry.o
+a - .obj/eors.o
+a - .obj/rz.o
+a - .obj/c2teqx.o
+a - .obj/faf03.o
+a - .obj/nut06a.o
+a - .obj/fapa03.o
+a - .obj/fw2m.o
+a - .obj/rxr.o
+a - .obj/gst06.o
+a - .obj/faur03.o
+a - .obj/tr.o
+a - .obj/fad03.o
+a - .obj/faom03.o
+a - .obj/fal03.o
+a - .obj/s06.o
+a - .obj/fave03.o
+a - .obj/fasa03.o
+a - .obj/pn06.o
+a - .obj/ir.o
+a - .obj/pom00.o
+a - .obj/cr.o
+a - .obj/fama03.o
+a - .obj/pfw06.o
+a - .obj/anp.o
+a - .obj/cp.o
+a - .obj/PMSDNUT2.o
+a - .obj/RG_ZONT2.o
+a - .obj/FUNDARG.o
+a - .obj/IGRF12.o
+a - .obj/SPLINE.o
+a - .obj/DEHANTTIDEINEL.o
+a - .obj/SHELLS.o
+a - .obj/ADMINT.o
+a - .obj/ORTHO_EOP.o
+a - .obj/CNMTX.o
+a - .obj/EVAL.o
+a - .obj/RECURS.o
+a - .obj/TDFRPH.o
+a - .obj/ST1IDIU.o
+a - .obj/SPROD.o
+a - .obj/ZERO_VEC8.o
+a - .obj/ST1ISEM.o
+a - .obj/UTLIBR.o
+a - .obj/STEP2DIU.o
+a - .obj/ST1L1.o
+a - .obj/HARDISP.o
+a - .obj/STEP2LON.o
+a - .obj/CAL2JD.o
+a - .obj/NORM8.o
+make[1]: Leaving directory '/projects/ms180369/PRIDE-PPPAR/src/lib'
+make -j4 -C spp
+make[1]: Entering directory '/projects/ms180369/PRIDE-PPPAR/src/spp'
+gfortran -g -O3 -c postpos.f90 -o .obj/postpos.o
+gfortran -g -O3 -c procpos.f90 -o .obj/procpos.o
+gfortran -g -O3 -c inputobs.f90 -o .obj/inputobs.o
+gfortran -g -O3 -c satellite.f90 -o .obj/satellite.o
+gfortran -g -O3 -c prange.f90 -o .obj/prange.o
+gfortran -g -O3 -c readobsnav.f90 -o .obj/readobsnav.o
+gfortran -g -O3 -c rnxhelper.f90 -o .obj/rnxhelper.o
+gfortran -g -O3 -c satposs.f90 -o .obj/satposs.o
+gfortran -g -O3 -c rtkcmn.f90 -o .obj/rtkcmn.o
+gfortran -g -O3 -c readrnxobs.f90 -o .obj/readrnxobs.o
+gfortran -g -O3 -c ephpos.f90 -o .obj/ephpos.o
+gfortran -g -O3 -c math.f90 -o .obj/math.o
+gfortran -g -O3 -c validate.f90 -o .obj/validate.o
+gfortran -g -O3 -c decodeobs.f90 -o .obj/decodeobs.o
+gfortran -g -O3 -c spp.f90 -o .obj/spp.o
+gfortran -g -O3 -c date.f90 -o .obj/date.o
+gfortran -g -O3 -c rescode.f90 -o .obj/rescode.o
+gfortran -g -O3 -c obscode.f90 -o .obj/obscode.o
+gfortran -g -O3 -c solution.f90 -o .obj/solution.o
+gfortran -g -O3 -c coordinate.f90 -o .obj/coordinate.o
+gfortran -g -O3 -c filehelper.f90 -o .obj/filehelper.o
+gfortran -g -O3 -c readrnxnav.f90 -o .obj/readrnxnav.o
+gfortran -g -O3 -c estpos.f90 -o .obj/estpos.o
+gfortran -g -O3 -c init_val.f90 -o .obj/init_val.o
+gfortran -g -O3 -c dispinfo.f90 -o .obj/dispinfo.o
+gfortran -g -O3 -c matrix.f90 -o .obj/matrix.o
+gfortran -g -O3 -c atmosphere.f90 -o .obj/atmosphere.o
+gfortran -g -O3 -c decodenav.f90 -o .obj/decodenav.o
+gfortran -g -O3 -c readrnxh.f90 -o .obj/readrnxh.o
+gfortran -g -O3 -c ephclk.f90 -o .obj/ephclk.o
+gfortran -g -O3 -c addrnxdata.f90 -o .obj/addrnxdata.o
+gfortran -g -O3 -c time.f90 -o .obj/time.o
+gfortran -g -O3 -c string.f90 -o .obj/string.o
+gfortran -g -O3 .obj/postpos.o .obj/procpos.o .obj/inputobs.o .obj/satellite.o .obj/prange.o .obj/readobsnav.o .obj/rnxhelper.o .obj/satposs.o .obj/rtkcmn.o .obj/readrnxobs.o .obj/ephpos.o .obj/math.o .obj/validate.o .obj/decodeobs.o .obj/spp.o .obj/date.o .obj/rescode.o .obj/obscode.o .obj/solution.o .obj/coordinate.o .obj/filehelper.o .obj/readrnxnav.o .obj/estpos.o .obj/init_val.o .obj/dispinfo.o .obj/matrix.o .obj/atmosphere.o .obj/decodenav.o .obj/readrnxh.o .obj/ephclk.o .obj/addrnxdata.o .obj/time.o .obj/string.o -o spp
+make[1]: Leaving directory '/projects/ms180369/PRIDE-PPPAR/src/spp'
+make -j4 -C orbit
+make[1]: Entering directory '/projects/ms180369/PRIDE-PPPAR/src/orbit'
+make[1]: Warning: File '../lib/libcom.a' has modification time 201 s in the future
+gfortran -g -O3 sp3orb.f90 get_sp3orb_args.f90 lagrange_interp_sp3.f90 ../lib/libcom.a -o sp3orb
+make[1]: warning:  Clock skew detected.  Your build may be incomplete.
+make[1]: Leaving directory '/projects/ms180369/PRIDE-PPPAR/src/orbit'
+make -j4 -C tedit
+make[1]: Entering directory '/projects/ms180369/PRIDE-PPPAR/src/tedit'
+gfortran  -g -O3 -c read_rinex_file.f90 -o .obj/read_rinex_file.o
+gfortran  -g -O3 -c remove_short.f90 -o .obj/remove_short.o
+gfortran  -g -O3 -c edit_widelane.f90 -o .obj/edit_widelane.o
+gfortran  -g -O3 -c lfbmwa.f90 -o .obj/lfbmwa.o
+gfortran  -g -O3 -c get_control_parameter.f90 -o .obj/get_control_parameter.o
+gfortran  -g -O3 -c check_ionosphere.f90 -o .obj/check_ionosphere.o
+gfortran  -g -O3 -c tedit.f90 -o .obj/tedit.o
+gfortran  -g -O3 -c check_for_jump.f90 -o .obj/check_for_jump.o
+gfortran  -g -O3 -c check_sd.f90 -o .obj/check_sd.o
+gfortran  -g -O3 -c lc_help.f90 -o .obj/lc_help.o
+gfortran  -g -O3 -c get_xyz.f90 -o .obj/get_xyz.o
+gfortran  -g -O3 -c set_flag.f90 -o .obj/set_flag.o
+gfortran  -g -O3 -c elevation.f90 -o .obj/elevation.o
+gfortran  -g -O3 -c mstpir.f90 -o .obj/mstpir.o
+gfortran  -g -O3 -c istrue.f90 -o .obj/istrue.o
+make[1]: Warning: File '../lib/libcom.a' has modification time 199 s in the future
+gfortran  -g -O3 -c write_diag_rpt.f90 -o .obj/write_diag_rpt.o
+gfortran  -g -O3 .obj/read_rinex_file.o .obj/remove_short.o .obj/edit_widelane.o .obj/lfbmwa.o .obj/get_control_parameter.o .obj/check_ionosphere.o .obj/tedit.o .obj/check_for_jump.o .obj/check_sd.o .obj/lc_help.o .obj/get_xyz.o .obj/set_flag.o .obj/elevation.o .obj/mstpir.o .obj/istrue.o .obj/write_diag_rpt.o ../lib/libcom.a -o tedit
+make[1]: warning:  Clock skew detected.  Your build may be incomplete.
+make[1]: Leaving directory '/projects/ms180369/PRIDE-PPPAR/src/tedit'
+make -j4 -C lsq
+make[1]: Entering directory '/projects/ms180369/PRIDE-PPPAR/src/lsq'
+gfortran -g -O3 -c lsq_rcv_prmt.f90 -o .obj/lsq_rcv_prmt.o
+gfortran -g -O3 -c lsq_process.f90 -o .obj/lsq_process.o
+gfortran -g -O3 -c lsq_wrt_header.f90 -o .obj/lsq_wrt_header.o
+gfortran -g -O3 -c lsq_rmv_prmt.f90 -o .obj/lsq_rmv_prmt.o
+gfortran -g -O3 -c get_lsq_args.f90 -o .obj/get_lsq_args.o
+gfortran -g -O3 -c glomod.f90 -o .obj/glomod.o
+gfortran -g -O3 -c gpsmod.f90 -o .obj/gpsmod.o
+gfortran -g -O3 -c lsq_add_ambcon.f90 -o .obj/lsq_add_ambcon.o
+gfortran -g -O3 -c lsq_cnt_prmt.f90 -o .obj/lsq_cnt_prmt.o
+gfortran -g -O3 -c lsq_add_newamb.f90 -o .obj/lsq_add_newamb.o
+gfortran -g -O3 -c lsq.f90 -o .obj/lsq.o
+gfortran -g -O3 -c qzsmod.f90 -o .obj/qzsmod.o
+gfortran -g -O3 -c galmod.f90 -o .obj/galmod.o
+gfortran -g -O3 -c lsq_init.f90 -o .obj/lsq_init.o
+gfortran -g -O3 -c lsq_add_obs.f90 -o .obj/lsq_add_obs.o
+gfortran -g -O3 -c bd3mod.f90 -o .obj/bd3mod.o
+gfortran -g -O3 -c lsq_slv_prmt.f90 -o .obj/lsq_slv_prmt.o
+gfortran -g -O3 -c lsq_dop.f90 -o .obj/lsq_dop.o
+gfortran -g -O3 -c bd2mod.f90 -o .obj/bd2mod.o
+make[1]: Warning: File '../lib/libcom.a' has modification time 196 s in the future
+gfortran -g -O3 -c lsq_rmv_normal.f90 -o .obj/lsq_rmv_normal.o
+gfortran -g -O3 .obj/lsq_rcv_prmt.o .obj/lsq_process.o .obj/lsq_wrt_header.o .obj/lsq_rmv_prmt.o .obj/get_lsq_args.o .obj/glomod.o .obj/gpsmod.o .obj/lsq_add_ambcon.o .obj/lsq_cnt_prmt.o .obj/lsq_add_newamb.o .obj/lsq.o .obj/qzsmod.o .obj/galmod.o .obj/lsq_init.o .obj/lsq_add_obs.o .obj/bd3mod.o .obj/lsq_slv_prmt.o .obj/lsq_dop.o .obj/bd2mod.o .obj/lsq_rmv_normal.o ../lib/libcom.a -o lsq
+make[1]: warning:  Clock skew detected.  Your build may be incomplete.
+make[1]: Leaving directory '/projects/ms180369/PRIDE-PPPAR/src/lsq'
+make -j4 -C redig
+make[1]: Entering directory '/projects/ms180369/PRIDE-PPPAR/src/redig'
+gfortran  -g -O3 -c redig.f90 -o .obj/redig.o
+gfortran  -g -O3 -c check_slip.f90 -o .obj/check_slip.o
+gfortran  -g -O3 -c check_pcres.f90 -o .obj/check_pcres.o
+gfortran  -g -O3 -c read_residual.f90 -o .obj/read_residual.o
+gfortran  -g -O3 -c log_sat.f90 -o .obj/log_sat.o
+gfortran  -g -O3 -c remov_shrt.f90 -o .obj/remov_shrt.o
+gfortran  -g -O3 -c check_arcslip.f90 -o .obj/check_arcslip.o
+gfortran  -g -O3 -c get_redig_args.f90 -o .obj/get_redig_args.o
+gfortran  -g -O3 -c istrue.f90 -o .obj/istrue.o
+make[1]: Warning: File '../lib/libcom.a' has modification time 194 s in the future
+gfortran  -g -O3 -c cutemod.f90 -o .obj/cutemod.o
+gfortran  -g -O3 .obj/redig.o .obj/check_slip.o .obj/check_pcres.o .obj/read_residual.o .obj/log_sat.o .obj/remov_shrt.o .obj/check_arcslip.o .obj/get_redig_args.o .obj/istrue.o .obj/cutemod.o ../lib/libcom.a   -o redig
+make[1]: warning:  Clock skew detected.  Your build may be incomplete.
+make[1]: Leaving directory '/projects/ms180369/PRIDE-PPPAR/src/redig'
+make -j4 -C arsig
+make[1]: Entering directory '/projects/ms180369/PRIDE-PPPAR/src/arsig'
+gfortran -g -O3 -c arsig.f90 -o .obj/arsig.o
+gfortran -g -O3 -c get_arsig_args.f90 -o .obj/get_arsig_args.o
+gfortran -g -O3 -c write_ambcon.f90 -o .obj/write_ambcon.o
+gfortran -g -O3 -c define_sat_pairs.f90 -o .obj/define_sat_pairs.o
+gfortran -g -O3 -c fixamb_rounding.f90 -o .obj/fixamb_rounding.o
+gfortran -g -O3 -c sort_invx.f90 -o .obj/sort_invx.o
+gfortran -g -O3 -c fixamb_search.f90 -o .obj/fixamb_search.o
+gfortran -g -O3 -c map_invnormal.f90 -o .obj/map_invnormal.o
+gfortran -g -O3 -c read_invnormal.f90 -o .obj/read_invnormal.o
+gfortran -g -O3 -c candid_amb.f90 -o .obj/candid_amb.o
+gfortran -g -O3 -c find_indep.f90 -o .obj/find_indep.o
+make[1]: Warning: File '../lib/libcom.a' has modification time 193 s in the future
+gfortran -g -O3 -c read_ambiguity.f90 -o .obj/read_ambiguity.o
+gfortran -g -O3 .obj/arsig.o .obj/get_arsig_args.o .obj/write_ambcon.o .obj/define_sat_pairs.o .obj/fixamb_rounding.o .obj/sort_invx.o .obj/fixamb_search.o .obj/map_invnormal.o .obj/read_invnormal.o .obj/candid_amb.o .obj/find_indep.o .obj/read_ambiguity.o ../lib/libcom.a -o arsig
+make[1]: warning:  Clock skew detected.  Your build may be incomplete.
+make[1]: Leaving directory '/projects/ms180369/PRIDE-PPPAR/src/arsig'
+make -j4 -C utils
+make[1]: Entering directory '/projects/ms180369/PRIDE-PPPAR/src/utils'
+make[1]: Warning: File '../lib/libcom.a' has modification time 193 s in the future
+gfortran  -g -O3 xyz2enu.f90 ../lib/libcom.a -o xyz2enu
+gfortran  -g -O3 get_ctrl.f90 ../lib/libcom.a -o get_ctrl
+gfortran  -g -O3 pbopos.f90 ../lib/libcom.a -o pbopos
+make[1]: warning:  Clock skew detected.  Your build may be incomplete.
+make[1]: Leaving directory '/projects/ms180369/PRIDE-PPPAR/src/utils'
+mv arsig/arsig lsq/lsq tedit/tedit redig/redig orbit/sp3orb spp/spp \
+	utils/xyz2enu utils/get_ctrl utils/pbopos ../bin/
+[1;31m
+                  .:::::::::::..                  
+               ::::...        .:::.  .:.          
+            .:::..........:--     :-:::.          
+           :-....          :..:. .. .-:           
+          -:.:.           .   .::     --          
+         -:::             :..   .:     :-         
+        :-.:           .:-       .:     -:        `o+///+/`  .o/:://+.    +:  .o//+o++:    `o+/////`
+        -.:        .:----:        -     :-        -s     :s  :o     -y        /+      :s.  -s
+    :-:.-.-.  ...::------         :.    .-        -s     /s  :o    .o+    o:  /o      .-s  -s     
+     . .-.:: ...      --:         -     .-        -y////+/`  :s//+y/`     o:  //       `y  :s::::::
+       .-::-:          -         :.     -:        -s         :o   .s:     o:  //       -s  :o
+       .--..:.         :.       :.     .-         -s         :o    `o/    o:  /+      -s.  -s
+       .-:-  ::.      ...     .:      .-.         -o         :+      :o+  o:  `oo////+:`   `/+/////:
+       .- .-:  .:..   :  ::.:.       :-           
+       .-   ::.    ..::..:-.       .:.            Positioning                   .-            o
+       .-     .-:.   .          .::.              ``.......`.`.-                -/            o
+       .-      :-.::::.....:::::.                 Racers to Image               -:      :-:/  s:--/.
+       .-      ::  :-:  ..                        ``..``` ` `` `````..          ::      :--s  o   `o
+       .-      ::  ..                             & Decipher the Earth          .+::::`/:-:o-`s:--/-
+       .-      ::                                 
+       .-::::::-:                                 
+       .-::::::-:                                 
+[0m
+[0;34m::[0m PRIDE-PPPAR (v3.0) installation successfully completed!
+[0;34m::[0m executable binaries are copy to /hellgate/home/ms180369/.PRIDE_PPPAR_BIN
+[0;34m::[0m /hellgate/home/ms180369/.PRIDE_PPPAR_BIN added to PATH
+
+
